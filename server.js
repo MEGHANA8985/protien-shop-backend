@@ -10,11 +10,13 @@ const app = express();
 // }));
 
 app.use(cors({
-  origin: [
-    "http://localhost:5173",
-    "http://localhost:5174",
-    "https://protien-shop-aptu6hzg2-meghana8985s-projects.vercel.app"
-  ]
+  // origin: [
+  //   "http://localhost:5173",
+  //   "http://localhost:5174",
+  //   "https://protien-shop-aptu6hzg2-meghana8985s-projects.vercel.app"
+  // ]
+
+  origin: "*"
 }));
 
 app.use(express.json());
